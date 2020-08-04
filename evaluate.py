@@ -29,4 +29,4 @@ same = 0 # khoi tao dem
 for i in range(len(name)):
     if(name[i] == testy[i]):
         same += 1
-print("Xác xuất dự đoán đúng là :" , round(float(same/len(name)) * 100, 2))
+print("Xác xuất dự đoán đúng là :" , round(float(same/len(name)) * 100, 2) , "%")

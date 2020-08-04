@@ -31,7 +31,7 @@ def predict_names(faces):
             if tmp > sim:  # so sanh khuon mat trong data co sim lon nhat
                 sim = tmp  # cap nhat lai sim
                 index = j  # cap nhat lai index khuon mat trong tap data
-        if sim > 0.65:  # thiet lap nguong so sanh
+        if sim > 0.6:  # thiet lap nguong so sanh
             names.append(data_y[index])  # them du doan ten khuon mat
             print("Predicted", sim, data_y[index])
         else:
@@ -41,7 +41,8 @@ def predict_names(faces):
 
 
 filename = "../face_recognize/Test_images/khacviet_tuanhung.jpg"  # link ảnh test
-# filename = "../face_recognize/Test_images/hoquanghieu.jpg"  # link ảnh test
+# filename = "../face_recognize/Test_images/hienho.jpg"  # link ảnh test
+# filename = "../face_recognize/Test_images/LanNgoc.jpg"  # link ảnh test
 #đọc file ảnh
 image = Image.open(filename)
 image = image.convert('RGB') # chuyển sảnh sang RGB nếu cần.

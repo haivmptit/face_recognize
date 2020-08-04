@@ -3,7 +3,6 @@ from numpy import asarray
 from mtcnn.mtcnn import MTCNN
 import os
 from os import listdir
-
 #Tách tên người từ tên file
 def get_name(name_file):
     s = name_file.split('.')
